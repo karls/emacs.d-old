@@ -1,7 +1,8 @@
 # My emacs config
 
-This is currently very much a work in progress. The initial push was to break
-the single humongous `init.el` file into separate, hopefully logical, pieces.
+This is currently very much a work in progress. The former, single humongous
+`init.el` was starting to become unwieldy. The current setup makes
+more sense logically and is easier to maintain.
 
 I've borrowed ideas and snippets from
 [cjohansen](https://github.com/cjohansen/.emacs.d),
@@ -13,4 +14,4 @@ I've borrowed ideas and snippets from
 
 I like [otfrom's](https://github.com/otfrom) approach of symlinking `~/.emacs.d`
 from other directories. This approach is easy and allows trying other people's
-configs out.
+configs out without much hassle.

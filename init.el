@@ -47,6 +47,11 @@
       kept-old-versions 2
       version-control t)
 
+(require 'server)
+(if (and (display-graphic-p)
+         (not (server-running-p)))
+  (server-start))
+
 ;; Install and require packages
 (require 'setup-packages)
 
@@ -68,3 +73,4 @@
 (require 'setup-clojure-mode)
 (require 'setup-haskell-mode)
 (require 'setup-ruby-mode)
+(require 'setup-golang-mode)

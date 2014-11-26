@@ -1,7 +1,7 @@
 (require 'package)
 (require 'cl)
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -21,9 +21,12 @@
                             highlight-parentheses
                             hl-sexp
                             ido-vertical-mode
+                            js3-mode
+                            json-mode
                             magit
                             markdown-mode
                             multiple-cursors
+                            org-journal
                             paredit
                             php-mode
                             pkg-info

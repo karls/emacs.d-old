@@ -26,6 +26,8 @@
 ;; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(set-default-font "Monaco 11")
+
 ;; UTF-8 please
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
@@ -81,7 +83,7 @@
 (setq-default truncate-lines t)
 
 ;; Keep cursor away from edges when scrolling up/down
-(require 'smooth-scrolling)
+;; (require 'smooth-scrolling)
 
 ;; Allow recursive minibuffers
 (setq enable-recursive-minibuffers t)
@@ -104,9 +106,6 @@
 ;; Sentences do not need double spaces to end. Period.
 (set-default 'sentence-end-double-space nil)
 
-;; 80 chars is a good width.
-(set-default 'fill-column 80)
-
 ;; Add parts of each file's directory to the buffer name if not unique
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
@@ -124,5 +123,11 @@
 (setq ack-and-a-half-executable "/usr/local/bin/ack")
 
 (setq system-uses-terminfo nil)
+
+;; (setq scroll-step 1)
+;; (setq scroll-conservatively 10000)
+;; (setq auto-window-vscroll nil)
+;; (setq scroll-step           1
+;;          scroll-conservatively 10000)
 
 (provide 'setup-sane-defaults)

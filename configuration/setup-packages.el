@@ -13,6 +13,7 @@
                             cider
                             clojure-mode
                             dash-at-point
+                            emmet-mode
                             expand-region
                             flx
                             flx-ido
@@ -34,7 +35,6 @@
                             projectile
                             rainbow-delimiters
                             ruby-mode
-                            smooth-scrolling
                             solarized-theme
                             undo-tree
                             wrap-region

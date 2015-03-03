@@ -13,6 +13,8 @@
 (setq custom-theme-directory
       (expand-file-name "themes" user-emacs-directory))
 
+;; (load-theme 'github t)
+
 ;; Customizations (M-x customize variants) go to a special file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)

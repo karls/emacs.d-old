@@ -6,7 +6,7 @@
 (setq projectile-globally-ignored-files (quote ("TAGS")))
 (setq projectile-globally-ignored-directories
       '(".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" "venv" "build"
-	"vendor" ".cabal-sandbox" "dist" ".vagrant" "node_modules"
+	"vendor" ".cabal-sandbox" "dist" ".vagrant" "node_modules" 
 	"bower_components" ".bundle"))
 
 (defadvice projectile-ack (after _)
